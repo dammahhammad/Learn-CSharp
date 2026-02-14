@@ -321,15 +321,30 @@ public class Patterns
     public static void Alpha18(int n)
     {
         //   Print the following pattern:
-        //           A
-        //         A B A
-        //       A B C B A
-        //     A B C D C B A
-        //   A B C D E D C B A
+        //          A        
+        //        A B A      
+        //      A B C B A    
+        //    A B C D C B A  
+        //  A B C D E D C B A
 
-        for (int i = 0; i < n; i++) {
-            for(int j = 0; j <= i; j++) {
-                Console.Write((char)('A' + i));
+        for (int i = 0; i <= n-1; i++) {
+            for(int j = 1; j < n-i; j++) {
+                Console.Write(' ');
+            }
+
+            char ch = 'A';
+            int breakpoint = (2 * i + 1) / 2;
+
+            for (int j = 1; j <= 2 * i + 1; j++) {
+                Console.Write(ch);
+
+                // Increment or decrement character
+                if (j <= breakpoint) ch++;
+                else ch--;
+            }
+
+            for (int j = 1; j < n - i; j++) {
+                Console.Write(' ');
             }
             Console.WriteLine();
         }
