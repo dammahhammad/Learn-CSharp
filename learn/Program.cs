@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Patterns.Alpha18(5);
+            Patterns.Alpha21(7);
         }
     }
 }

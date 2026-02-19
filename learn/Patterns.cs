@@ -349,4 +349,125 @@ public class Patterns
             Console.WriteLine();
         }
     }
+    public static void Alpha19(int n)
+    {
+        //   Print the following pattern:
+        //   E 
+        //   D E
+        //   C D E
+        //   B C D E
+        //   A B C D E
+
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j >= 0; j--) {
+                Console.Write((char)('E' - j));
+            }
+            Console.WriteLine();
+        }
+    }
+    public static void Alpha20(int n)
+    {
+        //   Print the following pattern:
+        //   * * * * * * * * * *
+        //   * * * *     * * * *
+        //   * * *         * * *
+        //   * *             * *
+        //   *                 *
+        //   *                 *
+        //   * *             * *
+        //   * * *         * * *
+        //   * * * *     * * * *
+        //   * * * * * * * * * *
+
+        for (int i = 0; i < 2*n; i++) {
+            if (i < n) {
+                for (int j = n; j > 0; j--) {
+                    if (j <= i) Console.Write("-");
+                    else Console.Write("*");
+                }
+
+                for (int k = 0; k < n; k++) {
+                    if (k < i) Console.Write("-");
+                    else Console.Write("*");
+                }
+            }
+            if ( i >= n) {
+                for (int l = 0; l < n; l++) {
+                    if (i - n >= l) Console.Write("*");
+                    else Console.Write("-");
+                }
+
+                for (int m = n; m > 0; m--) {
+                    if (m <= i - n + 1) Console.Write("*");
+                    else Console.Write("-");
+                }
+            }
+            Console.WriteLine();
+        }
+
+        // Method 2 - Simple
+        // 5 stars    0 spaces     5 stars
+        // 4 stars    2 spaces     4 stars
+        // 3 stars    4 spaces     3 stars
+        // 2 stars    6 spaces     2 stars
+        // 1 stars    8 spaces     1 stars
+        //------------------------------------------------ Symmetry 
+        // 1 stars    8 spaces     1 stars
+        // 2 stars    6 spaces     2 stars
+        // 3 stars    4 spaces     3 stars
+        // 4 stars    2 spaces     4 stars
+        // 5 stars    0 spaces     5 stars
+
+        Console.WriteLine("-------------------------------------");
+        Console.WriteLine("-------------------------------------");
+        int spaces = 0;
+        for (int i = 0; i < n;i++) {
+            for (int j = 0; j < n - i; j++) {
+                Console.Write("*");
+            }
+            for (int k = 0; k < spaces; k++) {
+                Console.Write(' ');
+            }
+            for (int l = 0; l < n-i; l++) {
+                Console.Write("*");
+            }
+            spaces += 2;
+            Console.WriteLine();
+        }
+
+        int spc = 2*n - 2;
+        for (int i = 0; i < n;i++) {
+            for (int j = 0; j <= i; j++) {
+                Console.Write("*");
+            }
+            for (int k = 0; k < spc; k++) {
+                Console.Write(' ');
+            }
+            for (int l = 0; l <= i; l++) {
+                Console.Write("*");
+            }
+            spc -= 2;
+            Console.WriteLine();
+        }
+    }
+
+    public static void Alpha21(int n)
+    {
+        //   Print the following pattern:
+        //   * * * *
+        //   *     *
+        //   *     *
+        //   * * * *
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || j == 0 || i == n-1 || j == n-1) {
+                    Console.Write("* ");
+                } else {
+                    Console.Write("  ");
+                }
+            }
+            Console.WriteLine();
+        }
+    }
 }
