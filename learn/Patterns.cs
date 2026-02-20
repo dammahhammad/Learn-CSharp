@@ -2,7 +2,7 @@
 
 public class Patterns
 {
-    public static void Alpha(int n)
+    public static void Pattern(int n)
     {
         //   Print the following pattern:
         //   * * * * *
@@ -18,8 +18,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-
-    public static void Alpha2(int n)
+    public static void Pattern2(int n)
     {
         //   Print the following pattern:
         //   *
@@ -35,7 +34,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha3()
+    public static void Pattern3()
     {
         //   Print the following pattern:
         //   1
@@ -51,7 +50,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha4()
+    public static void Pattern4()
     {
         //   Print the following pattern:
         //   1
@@ -67,7 +66,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha5(int n)
+    public static void Pattern5(int n)
     {
         //   Print the following pattern:
         //   * * * * *
@@ -83,7 +82,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha6(int n)
+    public static void Pattern6(int n)
     {
         //   Print the following pattern:
         //   * * * * *
@@ -99,7 +98,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha7(int n)
+    public static void Pattern7(int n)
     {
         //   Print the following pattern:
         //   1 2 3 4 5
@@ -115,7 +114,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha8(int n)
+    public static void Pattern8(int n)
     {
         //   Print the following pattern:
         //                *
@@ -139,7 +138,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha9(int n)
+    public static void Pattern9(int n)
     {
         //   Print the following pattern:
         //        * * * * * * * * *
@@ -163,7 +162,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha10(int n)
+    public static void Pattern10(int n)
     {
         //   Print the following pattern:
         //                *
@@ -177,10 +176,10 @@ public class Patterns
         //              * * *
         //                *
 
-        Alpha8(n);
-        Alpha9(n);
+        Pattern8(n);
+        Pattern9(n);
     }
-    public static void Alpha11(int n)
+    public static void Pattern11(int n)
     {
         //   Print the following pattern:
         //   *
@@ -204,8 +203,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-
-    public static void Alpha12(int n)
+    public static void Pattern12(int n)
     {
         //   Print the following pattern:
         //   1
@@ -225,7 +223,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha13(int n)
+    public static void Pattern13(int n)
     {
         //   Print the following pattern:
         //   1                 1
@@ -253,7 +251,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha14(int n)
+    public static void Pattern14(int n)
     {
         //   Print the following pattern:
         //   1
@@ -270,7 +268,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha15(int n)
+    public static void Pattern15(int n)
     {
         //   Print the following pattern:
         //   A
@@ -286,7 +284,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha16(int n)
+    public static void Pattern16(int n)
     {
         //   Print the following pattern:
         //   A B C D E
@@ -302,7 +300,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha17(int n)
+    public static void Pattern17(int n)
     {
         //   Print the following pattern:
         //   A
@@ -318,7 +316,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha18(int n)
+    public static void Pattern18(int n)
     {
         //   Print the following pattern:
         //          A        
@@ -349,7 +347,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha19(int n)
+    public static void Pattern19(int n)
     {
         //   Print the following pattern:
         //   E 
@@ -365,7 +363,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-    public static void Alpha20(int n)
+    public static void Pattern20(int n)
     {
         //   Print the following pattern:
         //   * * * * * * * * * *
@@ -450,8 +448,7 @@ public class Patterns
             Console.WriteLine();
         }
     }
-
-    public static void Alpha21(int n)
+    public static void Pattern21(int n)
     {
         //   Print the following pattern:
         //   * * * *

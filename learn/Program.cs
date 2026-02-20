@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Patterns.Alpha21(7);
+            Know_basic_maths.Palindrome(1333312);
         }
     }
 }
