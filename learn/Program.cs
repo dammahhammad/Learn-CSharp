@@ -1,10 +1,9 @@
-﻿namespace learn
+﻿namespace learn;
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Know_basic_maths.Palindrome(1333312);
-        }
+        BasicRecursion.Fibonacci2(8);
     }
 }
